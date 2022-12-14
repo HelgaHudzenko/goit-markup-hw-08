@@ -1,0 +1,48 @@
+.icon__header {
+	display: flex;
+	fill: currentColor;
+	height: 16px;
+	align-items: center;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon__team:hover
+.icon__team:focus {
+	fill:#EEEEEE
+}
+
+.team__icon-media {
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon__team {
+	fill: #AFB1B8;
+}
+
+.team__icon-media:hover {
+	background-color: #2196F3;
+	fill: #FFFFFF;
+	
+	
+}
+
+.team__icon-media:hover svg {
+	fill: #FFFFFF;
+}
+
+.icon__footer {
+	fill: #FFFFFF;
+}
+
+.icon__send {
+	margin-left: 10px;
+	fill: #FFFFFF;
+}
+
+

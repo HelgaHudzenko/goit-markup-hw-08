@@ -1,0 +1,19 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.section.team {
+	background-color: var(--third-bg-cl);
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(42/36);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--second-txt-cl);
+}
