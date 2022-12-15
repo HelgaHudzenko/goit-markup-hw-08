@@ -1,26 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	position: relative;
 	font-style: normal;
 	margin: 0 auto;
-}
-
-body {
-	background-color: var(--main-bg-cl);
+    background-color: var(--main-bg-cl);
 	color: var(--main-txt-cl);
 	font-family: var(--main-font);
-}
-
-.hero__title {
-	display: block;
-	margin: 0 auto;
-	max-width: 700px;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: calc(60/44);
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-	color: var(--light-txt-cl);
 }
 
 *,
@@ -29,4 +17,3 @@ body {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
