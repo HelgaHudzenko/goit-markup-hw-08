@@ -15,6 +15,10 @@
 }
   
 .modal {
+@media screen and (max-width: 479px) {
+	width: 318px;
+	height: 609px;
+}
 	position: absolute;
 	z-index: 99;
 	top: 70px;

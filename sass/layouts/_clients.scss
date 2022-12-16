@@ -24,8 +24,8 @@
     }
         
     @media screen and (min-width: 1200px) {
-         margin-bottom: 50px;
-         font-size: 36px;
+        margin-bottom: 50px;
+        font-size: 36px;
     }
 }
 
@@ -63,8 +63,17 @@
 
 
 .clients__list {
+
+    display: flex;
+	flex-direction: row;
+  	height: 100%;
+  	width: 100%;
+    object-fit: fill;
+	align-content: space-between;
+	justify-content: center;
+	gap: 30px;
 	
-    @media screen and (max-width: 767px) {
+  /*  @media screen and (max-width: 767px) {
         display: flex;    
         justify-content: center;
         flex-wrap: wrap;
@@ -90,5 +99,5 @@
         align-content: space-between;
         justify-content: center;
         gap: 30px;
-    }
+    } */
 }

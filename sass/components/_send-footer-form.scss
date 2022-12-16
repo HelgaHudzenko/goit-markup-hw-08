@@ -1,11 +1,24 @@
-.send-form {
-	margin-top: 12px;
-	left: 816px;
+.footer__form {
+	@media screen and (max-width: 767px) {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+	
+	@media screen and (min-width: 1200px) {
+		display: block;
+		align-items: flex-end;
+		margin-top: 12px;
+		left: 816px;
+	}
 }
 
 .footer__send-p {
 	font-family: var(--main-font);
-	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;

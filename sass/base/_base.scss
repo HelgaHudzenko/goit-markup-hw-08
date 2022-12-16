@@ -3,12 +3,29 @@ html {
 }
 
 body {
-	position: relative;
-	font-style: normal;
-	margin: 0 auto;
-    background-color: var(--main-bg-cl);
-	color: var(--main-txt-cl);
-	font-family: var(--main-font);
+	
+	@media screen and (min-width: 480px) {
+		background-color: var(--main-bg-cl);
+		color: var(--main-txt-cl);
+		font-family: var(--main-font);
+		width: 100%;
+		overflow-x: hidden;
+	}
+	@media screen and (min-width: 768px) {
+		background-color: var(--main-bg-cl);
+		color: var(--main-txt-cl);
+		font-family: var(--main-font);
+		width: 50%;
+	}
+	
+	@media screen and (min-width: 1200px) {
+		position: relative;
+		margin: 0 auto;
+		background-color: var(--main-bg-cl);
+		color: var(--main-txt-cl);
+		font-family: var(--main-font);
+		width: 33.33%;
+	}
 }
 
 *,
