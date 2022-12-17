@@ -29,10 +29,9 @@
 	@media screen and (min-width: 768px) {
 	margin-bottom: 0;
 	}
+
 	@media screen and (min-width: 1200px) {
 	margin-right: 30px;
-	}
-		
 	}
 }
 
@@ -82,6 +81,7 @@
 	letter-spacing: 0.03em;
 	color: var(--main-txt-cl);
 }
+}
 
 .about__icon-overlay {
 	
@@ -89,25 +89,22 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	
 		width: 100%;
 		height: 120px;
 		margin-bottom: 30px;
 		background-color: #f5f4fa;
-		
-			}
-		@media screen and (min-width: 768px) {
+	}
+
+	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	
-		
 		height: 120px;
 		margin-bottom: 30px;
 		background-color: #f5f4fa;
-		}
+	}
 	
-		@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
 		display: flex;
 		align-items: center;
 		justify-content: center;

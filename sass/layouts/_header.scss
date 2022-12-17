@@ -43,7 +43,6 @@
         margin: 0;
         padding: 24px 0 25px;
     }
-
 }
 
 .header nav {
@@ -82,6 +81,7 @@ nav:active {
 	text-decoration: none;
 	color: var(--main-txt-cl);
 	opacity: 0.8;
+    
 }
 
 .header-contacts a:hover,
@@ -93,7 +93,7 @@ nav:active {
 .mail::before
 .tel::before {
 	content: "";
-	background-image: url(images/smartphone.svg);
+	background-image: url(.images/main=bg.x1.jpg);
 }
 
 .link {
@@ -106,15 +106,13 @@ nav:active {
     }
 
     @media screen and (min-width: 1200px) {
-        margin-left: 10px;
-        display: flex;
-        align-items: center;
+        fill: #757575;
+        margin-right: 10px;
     }
 }
 
 .link:hover {
 	fill: #2196f3;
-	
 }
 
 .icon__header {
@@ -134,7 +132,7 @@ nav:active {
         position: absolute;
         top: 60px;
         left: 1px;
-        width: 100%;
+        width: 45px;
         height: 4px;
         background: var(--button-bg-cl);
         border-radius: 2px;
