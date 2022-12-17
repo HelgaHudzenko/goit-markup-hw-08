@@ -2402,24 +2402,6 @@ input::-webkit-inner-spin-button {
   }
 }
 
-/*.auth-nav__link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--main-txt-cl);
-}*/
-.auth-nav__icon-mail {
-  fill: #757575;
-  margin-right: 10px;
-  -webkit-text-emphasis: none;
-          text-emphasis: none;
-}
-
-.auth-nav__icon-tel {
-  fill: #757575;
-  margin-right: 10px;
-}
-
 .auth-nav__link:hover .auth-nav__icon-mail {
   fill: var(--accent-txt-cl);
 }
