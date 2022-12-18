@@ -6,13 +6,28 @@
         margin-right: auto;
         padding-top: 118px;
         padding-bottom: 118px;
-        width: 100%;
         text-align: center;
-        max-width: 1600px;
+        max-width: 767px;
         height: 400px;
         background-color: var(--secondary-bg-cl);
         background-image: url(../images/main-bg.png);
-        background-position: center center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(47, 48, 58, 0.4);
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        text-align: center;
+        min-width: 768px;
+        height: 400px;
+        background-color: var(--secondary-bg-cl);
+        background-image: url(../images/main-bg.png);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: rgba(47, 48, 58, 0.4);
@@ -22,12 +37,11 @@
         padding: 200px;
         background-color: var(--secondary-bg-cl);
         background-image: url(../images/main-bg.png);
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: rgba(47, 48, 58, 0.4);
-        max-width: 1600px;
-        width: 100%;
+        min-width: 1200px;
         background-size: cover;
         position: relative;
         z-index: 10;
@@ -37,7 +51,7 @@
     @media(min-resolution:2dppx){
         background-color: var(--secondary-bg-cl);
         background-image: url(../images/main-bg.x1.png);
-        background-position: center center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-color: rgba(47, 48, 58, 0.4);
@@ -45,6 +59,11 @@
 }
 
 .hero:after {
+    @media screen and (max-width: 767px) {
+        content: '';
+        background: rgba(47, 48, 58, 0.4);
+        z-index: -1;
+    }
     @media screen and (max-width: 767px) {
         content: '';
         background: rgba(47, 48, 58, 0.4);
@@ -75,7 +94,6 @@
 	
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;
-    
         font-weight: 900;
         font-size: 26px;
         line-height: calc(60/44);
@@ -86,8 +104,6 @@
     
     @media screen and (min-width: 768px) {
         margin-bottom: 30px;
-    
-        max-width: 700px;
 	    font-weight: 900;
 	    font-size: 44px;
 	    line-height: calc(60/44);
@@ -97,15 +113,14 @@
     }
     
     @media screen and (min-width: 1200px) {
-        margin-bottom: 30px;
-
+        margin-bottom: 40px;
         display: block;
 	    margin: 0 auto;
-	    max-width: 700px;
 	    font-weight: 900;
 	    font-size: 44px;
 	    line-height: calc(60/44);
 	    text-align: center;
+        align-items: center;
 	    letter-spacing: 0.06em;
         color: var(--light-txt-cl);
 	    text-transform: uppercase;

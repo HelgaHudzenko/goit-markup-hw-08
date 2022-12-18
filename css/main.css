@@ -126,7 +126,7 @@ html {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    max-width: 767px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -135,7 +135,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -144,7 +144,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    min-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -382,13 +382,30 @@ nav:active {
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    width: 100%;
     text-align: center;
-    max-width: 1600px;
+    max-width: 767px;
     height: 400px;
     background-color: var(--secondary-bg-cl);
     background-image: url(../images/main-bg.png);
-    background-position: center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(47, 48, 58, 0.4);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    min-width: 768px;
+    height: 400px;
+    background-color: var(--secondary-bg-cl);
+    background-image: url(../images/main-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(47, 48, 58, 0.4);
@@ -399,12 +416,11 @@ nav:active {
     padding: 200px;
     background-color: var(--secondary-bg-cl);
     background-image: url(../images/main-bg.png);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(47, 48, 58, 0.4);
-    max-width: 1600px;
-    width: 100%;
+    min-width: 1200px;
     background-size: cover;
     position: relative;
     z-index: 10;
@@ -415,13 +431,20 @@ nav:active {
   .hero {
     background-color: var(--secondary-bg-cl);
     background-image: url(../images/main-bg.x1.png);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(47, 48, 58, 0.4);
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero:after {
+    content: "";
+    background: rgba(47, 48, 58, 0.4);
+    z-index: -1;
+  }
+}
 @media screen and (max-width: 767px) {
   .hero:after {
     content: "";
@@ -465,7 +488,6 @@ nav:active {
 @media screen and (min-width: 768px) {
   .hero__title {
     margin-bottom: 30px;
-    max-width: 700px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636363636;
@@ -476,14 +498,16 @@ nav:active {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: block;
     margin: 0 auto;
-    max-width: 700px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636363636;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     letter-spacing: 0.06em;
     color: var(--light-txt-cl);
     text-transform: uppercase;
