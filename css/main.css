@@ -1848,6 +1848,9 @@ input::-webkit-inner-spin-button {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+  row-gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .butt-filt:not(:last-child) {
