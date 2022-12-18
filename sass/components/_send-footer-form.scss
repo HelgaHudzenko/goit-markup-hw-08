@@ -1,16 +1,16 @@
 .footer__form {
 	@media screen and (max-width: 767px) {
-		display: flex;
+		display: block;
 		max-width: 767px;
 		justify-content: center;
 	}
 	
 	@media screen and (min-width: 768px) {
-		display: block;
+		display: flex;
 	}
 	
 	@media screen and (min-width: 1200px) {
-		display: block;
+		display: flex;
 		align-items: flex-end;
 		margin-top: 12px;
 		left: 816px;
