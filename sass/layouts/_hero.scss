@@ -10,7 +10,7 @@
         max-width: 767px;
         height: 400px;
         background-color: var(--secondary-bg-cl);
-        background-image: url(../images/main-bg.png);
+        background-image: url(../../images/main-bg1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -26,7 +26,7 @@
         min-width: 768px;
         height: 400px;
         background-color: var(--secondary-bg-cl);
-        background-image: url(../images/main-bg.png);
+        background-image: url(../../images/main-bg2.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -36,7 +36,7 @@
     @media screen and (min-width: 1200px) {
         padding: 200px;
         background-color: var(--secondary-bg-cl);
-        background-image: url(../images/main-bg.png);
+        background-image: url(../../images/main-bg2.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -50,7 +50,7 @@
 
     @media(min-resolution:2dppx){
         background-color: var(--secondary-bg-cl);
-        background-image: url(../images/main-bg.x1.png);
+        background-image: url(../../images/main-bg2.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
