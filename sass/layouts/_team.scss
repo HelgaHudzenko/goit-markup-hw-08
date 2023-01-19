@@ -3,6 +3,7 @@
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 .section.team {
@@ -44,6 +45,7 @@
         display: flex;
         flex-wrap: nowrap;
         gap: 0;
+        margin-left: auto;
     }
     &__item:not(:last-child) {
         
@@ -190,7 +192,6 @@
     align-content: center;
     gap: 10px;
 }
-
 
 .team__icon-media {
 	width: 44px;
