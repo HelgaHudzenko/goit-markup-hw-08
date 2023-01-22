@@ -24,7 +24,8 @@
 					<a href="./index.html" class="logo logo-bl"><span class="logo-blue">Web</span>Studio</a>
 					<ul class="site-nav list">
 						<li class="head__link">
-							<a class="current is-active studio" href="./index.html">Студія</a>
+							<a class=" is-active studio" href="./index.html">Студія</a>
+							<div class="current"></div>
 						</li>
 						<li class="head__link">
 							<a class="" href="./portfolio.html">Портфоліо</a>
@@ -54,9 +55,13 @@
 						</li>
 					</ul>
 					<button class="mobile-btn js-open-menu" aria-expanded="false">
-						<svg class="mobile-btn-icon" width="24" height="16">
+						<!-- <svg class="mobile-btn-icon" width="24" height="16">
+						  <use href="./images/icons.svg#icon-menu"></use>
+						</svg> -->
+						<svg class="mobile-btn-icon" width="100%" height="100%" viewBox="0 0 24 24">
 						  <use href="./images/icons.svg#icon-menu"></use>
 						</svg>
+						
 					</button>
 				</div>
 			</div>
@@ -77,6 +82,7 @@
 			<div class="about__inner">
 				<h2 class="visually-hidden">About US</h2>
 				<ul class="list feature-list">
+
 					<li class="feature-list__item"> 
 						<div class="about__icon-overlay">
 							<svg class="icon__aboutus" 
@@ -90,6 +96,7 @@
 							формування позиції.
 						</p>
 					</li>
+					
 					<li class="feature-list__item">
 						<div class="about__icon-overlay">
 							<svg class="icon__aboutus" 
@@ -164,12 +171,13 @@
 		<h2 class="team__title section-title">Наша команда</h2>
 		<div class="container__team">
 				<ul class="list team__list">
-					<li class="team__item">
+					
+					<!-- <li class="team__item">
 						<img srcset=".images/team1.x1.jpg x1, .images/team1.x2.jpg x2"
 						src="images/team1.jpg" alt="team member 1" width="100%"/>
 						<div class="team__inform">
-						<h3 class="team__card-title">Ігор Дем'яненко</h3>
-						<p class="team__card-text">Product Designer</p>
+						<h3 class="team__card-title"></h3>
+						<p class="team__card-text"></p>
 						<ul class="team__soc-row">
 							<li>
 								<a class="team__icon-media" href="#">
@@ -205,7 +213,53 @@
 							</li>
 						</ul>
 						</div>
+					</li> -->
+
+					<li class="team__item">
+						<img srcset=".images/team1.x1.jpg x1, .images/team1.x2.jpg x2" 
+							src="images/team1.jpg" 
+							alt="team member 1" 
+							width="100%"/>
+						<div class="team__inform">
+						<h3 class="team__card-title">Ігор Дем'яненко</h3>
+						<p class="team__card-text">Product Designer</p>
+						<ul class="team__soc-row">
+							<li>
+								<a class="team__icon-media" href="#">
+									<svg class="icon__team" 
+										width="20" height="20">
+										<use href="images/icons.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="team__icon-media" href="#">
+									<svg class="icon__team" 
+										width="20" height="20">
+										<use href="images/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="team__icon-media" href="#">
+									<svg class="icon__team" 
+										width="20" height="20">
+										<use href="images/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="team__icon-media" href="#">
+									<svg class="icon__team" 
+										width="20" height="20">
+										<use href="images/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						</div>
 					</li>
+					
 					<li class="team__item">
 						<img srcset=".images/team2.x1.jpg x1, .images/team2.x2.jpg x2" 
 							src="images/team2.jpg" 
@@ -250,6 +304,7 @@
 						</ul>
 						</div>
 					</li>
+
 					<li class="team__item">
 						<img srcset=".images/team3.x1.jpg x1, .images/team3.x2.jpg x2"
 						src="images/team3.jpg" alt="team member 3" width="100%" />
@@ -557,27 +612,37 @@
 				  <a href="" class="mobile-menu-link mob-link">Контакти</a>
 				</li>
 			  </ul>
-			  <ul>
+			  <ul class="mobile_menu-fut">
 				<li>
 					<a class="mobile-menu-link mob-link" href="">+38 044 111 11 11</a>
 				</li>
-				<li>
-					<a class="mobile-menu-link mob-link" href="">info@devstudio.com</a>
+				<li class="mobile_menu-fut-last">
+					<a class="mobile-menu-link mob-link " href="">info@devstudio.com</a>
 				</li>
 			  </ul>
-			  <div class="mobile-menu-group">
+			  <!-- <div class="mobile-menu-group">
 				<a class="mobile-menu-link mob-link" href=""></a>
 				<button class="btn mobile-menu-group-btn" type="button" data-modal-open>
 				  online-booking
 				</button>
-			  </div>
+			  </div> -->
 			  <ul class="mobile-media-list">
 				<li class="mobile-media-item">
 				  <a href="" class="mobile-media-link mob-link">Instagram</a>
 				</li>
+				<div class="border"></div>
 				<li class="mobile-media-item">
-				  <a href="" class="mobile-media-link mob-link">Youtube</a>
+				  <a href="" class="mobile-media-link mob-link">Twitter</a>
 				</li>
+				<div class="border"></div>
+				<li class="mobile-media-item">
+					<a href="" class="mobile-media-link mob-link">Facebook</a>
+				</li>
+				<div class="border"></div>
+				<li class="mobile-media-item">
+					<a href="" class="mobile-media-link mob-link">Linkedin</a>
+				</li>
+				
 			  </ul>
 			</div>
 		  </div>

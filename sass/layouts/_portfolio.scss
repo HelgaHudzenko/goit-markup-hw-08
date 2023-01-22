@@ -55,7 +55,8 @@
 }
 
 .portfolio__card:hover .overlay 
-.portfolio__card:focus .overlay {
+// .portfolio__card:focus .overlay 
+{
 	transform: translateY(-100%);
 }
 

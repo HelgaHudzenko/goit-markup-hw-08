@@ -1,5 +1,10 @@
+.mobile-btn-icon svg {
+  // display: none;
+  width: 100% !important;
+}
+
 .mobile-btn {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -9,6 +14,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+
+  @media screen and (max-width: 760px) {
+    display: block;
+  }
   
 }
 
@@ -45,6 +55,23 @@
   color: currentColor;
 }
 
+.mobile_menu-fut {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.mobile_menu-fut a {
+  font-size: 34px;
+  color: #2196f3;
+
+}
+.mobile_menu-fut-last a {
+  color: #757575;
+  font-size: 24px;
+
+}
+ 
+
 .mob-backdrop {
   position: fixed;
   top: 0;
@@ -67,17 +94,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 337px;
+  width: 100%;
+  // max-width: 337px;
   height: inherit;
-  margin-left: auto;
-  padding: 118px 40px;
+  // margin-left: auto;
+  padding: 120px 40px 50px 40px;
   background-color: #fff;
 
   transform: translateX(0);
   transition: transform 100ms;
 
   .backdrop--hidden & {
-    transform: translateX(100%);
+    // transform: translateX(100%);
   }
 }
 
@@ -96,7 +124,7 @@
 }
 
 .mobile-menu-list {
-   list-style: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   margin-bottom: auto;
@@ -107,14 +135,13 @@
 }
 
 .mobile-menu-link {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 40px;
   line-height: calc(25 / 18);
   letter-spacing: 0.1em;
   color: #303030;
 
-  &:hover,
-  &:focus {
+  &:hover{
     color: #2196f3;
   }
 }
@@ -131,34 +158,53 @@
    list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 500px;
+  width: 100%;
+
 }
 
 .mobile-media-item {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   line-height: calc(19 / 14);
-  letter-spacing: 0.2em;
+  // letter-spacing: 0.2em;
 
   color: #303030;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  // &:not(:last-child) {
+  //   margin-bottom: 24px;
 
-    &::before {
-      background-color: #303030;
-    }
-  }
+    // &::before {
+    //   background-color: #303030;
+    // }
+  // }
 
-  &::before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 1px;
+  // &::before {
+  //   content: '';
+  //   display: block;
+  //   width: 60px;
+  //   height: 1px;
 
-    background-color: transparent;
-  }
+  //   background-color: transparent;
+  // }
+}
+
+.mobile-media-link {
+  color: #2196f3;
+}
+
+.border {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: black;
+
 }

@@ -1,4 +1,19 @@
+
 .hero {
+    @media screen and (min-width: 1200px) {
+        background-color: var(--secondary-bg-cl);
+        background-image: url(../images/main-bg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(47, 48, 58, 0.4);
+        min-width: 1200px;
+        height: 600px;
+        background-size: cover;
+        position: relative;
+        z-index: 10;
+        margin: 0 auto;
+    }       
 	
     @media screen and (max-width: 767px) {
         margin-top: 0;
@@ -33,20 +48,6 @@
         background-color: rgba(47, 48, 58, 0.4);
     }
 
-    @media screen and (min-width: 1200px) {
-        padding: 200px;
-        background-color: var(--secondary-bg-cl);
-        background-image: url(../images/main-bg2.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: rgba(47, 48, 58, 0.4);
-        min-width: 1200px;
-        background-size: cover;
-        position: relative;
-        z-index: 10;
-        margin: 0 auto;
-    }       
 
     @media(min-resolution:2dppx){
         background-color: var(--secondary-bg-cl);
@@ -78,6 +79,7 @@
         bottom: 0;
         background: rgba(47, 48, 58, 0.4);
         z-index: -1;
+        width: 100vw !important;
     }
 }
 

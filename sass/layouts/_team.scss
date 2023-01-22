@@ -33,19 +33,22 @@
 
     @media screen and (max-width: 767px) {
         display: block;
+        
     }
         
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;  
+        // gap: 30px; 
+        justify-content: center; 
     }
         
     @media screen and (min-width: 1200px) {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 0;
         margin-left: auto;
+        justify-content: center;
     }
     &__item:not(:last-child) {
         
@@ -91,6 +94,7 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--second-txt-cl);
+    margin-top: 20px;
 }
 
 .team__card-text {
@@ -115,7 +119,8 @@
 
     @media screen and (min-width: 480px) {  
         margin-bottom: 30px;
-        margin: 15px;
+        margin: 15px auto;
+        margin-bottom: 30px;
         max-width: 480px;
         border-left: 1px solid #eeeeee;
         border-right: 1px solid #eeeeee;
@@ -125,6 +130,7 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: #fff;
+        padding-bottom: 20px;
     }
         
     @media screen and (min-width: 768px) {
@@ -139,6 +145,7 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: #fff; 
+        padding-bottom: 20px;
     }
          
     @media screen and (min-width: 1200px) {
@@ -153,6 +160,7 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: #fff;
+        padding-bottom: 20px;
     } 
 }
         
