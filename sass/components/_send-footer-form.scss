@@ -6,9 +6,10 @@
         align-items: center;
 		margin-top: 60px;
 	}
-	@media screen and (min-width: 767px) {
+	@media screen and (min-width: 768px) {
 		display: flex;
         flex-direction: column;
+		align-items: center;
 		margin-top: 40px;
 	}
 	@media screen and (min-width: 1200px) {
@@ -64,6 +65,7 @@
 		color: var(--light-txt-cl);
 		margin-right: 20px;
 	}
+
 	@media screen and (min-width: 1200px) {
 	padding: 15px;
 	width: 358px;

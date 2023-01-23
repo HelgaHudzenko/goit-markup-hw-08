@@ -80,9 +80,9 @@
     gap: 30px;
 }
 
-.studio {
+/*.studio {
 	// margin-left: 93px;
-}
+}*/
 
 .current {
 	font-weight: 500;
@@ -101,7 +101,7 @@
 
     @media screen and (max-width: 1200px) {
         // justify-content: center;
-        padding: 0 50px;
+        padding: 0;
     }
 
 }
@@ -152,9 +152,9 @@ nav:active {
 	fill: #2196f3;
 }
 
-.icon__header {
+/*.icon__header {
 	// margin-right: 10px;
-}
+}*/
 
 .site-nav .is-active {
 	color: var(--accent-txt-cl);

@@ -19,6 +19,12 @@
 	width: 318px;
 	height: 609px;
 }
+
+@media screen and (max-width: 570px) {
+	width: 399px;
+	height: 649px;
+	min-width: 480px;
+}
 	position: absolute;
 	z-index: 99;
 	top: 70px;

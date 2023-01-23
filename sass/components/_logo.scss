@@ -1,11 +1,24 @@
 .logo {
-	display: inline-block;
-	font-family: var(--secondary-font);
-	font-weight: 700;
-	font-size: 26px;
-	line-height: calc(31/26);
-	letter-spacing: 0.03em;
-	text-decoration: none;
+	
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		font-family: var(--secondary-font);
+		font-weight: 700;
+		font-size: 26px;
+		line-height: calc(31/26);
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		
+	}
+	@media screen and (max-width: 1199px) {
+		display: inline-block;
+		font-family: var(--secondary-font);
+		font-weight: 700;
+		font-size: 26px;
+		line-height: calc(31/26);
+		letter-spacing: 0.03em;
+		text-decoration: none;
+	}
 }
 
 .logo-bl {
@@ -21,6 +34,7 @@
 		letter-spacing: 0.03em;
 		text-decoration: none;
 		color: var(--black-txt-cl);
+		
 	}
 	
 	@media screen and (min-width: 768px) {
