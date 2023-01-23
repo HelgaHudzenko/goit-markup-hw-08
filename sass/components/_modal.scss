@@ -15,16 +15,21 @@
 }
   
 .modal {
-@media screen and (max-width: 485px) {
-	width: 318px;
-	height: 499px;
-}
+	@media screen and (max-width: 460px) {
+		width: 90%;
+		height: 90%;
+	}
 
-@media screen and (min-width: 486px) {
-	width: 399px;
-	height: 499px;
-	max-width: 570px;
-}
+	@media screen and (min-width: 465px) {
+		width: 450px;
+		height: 609px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+		height: 581px;
+	}
+
 	position: absolute;
 	z-index: 99;
 	top: 70px;
