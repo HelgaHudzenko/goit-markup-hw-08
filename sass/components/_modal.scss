@@ -15,15 +15,15 @@
 }
   
 .modal {
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 485px) {
 	width: 318px;
 	height: 609px;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (min-width: 486px) {
 	width: 399px;
 	height: 649px;
-	min-width: 480px;
+	max-width: 570px;
 }
 	position: absolute;
 	z-index: 99;
