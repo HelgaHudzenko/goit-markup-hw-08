@@ -2038,7 +2038,7 @@ input::-webkit-inner-spin-button {
           justify-content: space-between;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer__form-send {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2104,7 +2104,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .input__field-send {
     padding-left: 15px;
     padding-right: 15px;
